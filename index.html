@@ -4,46 +4,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bar Italy</title>
-  <link rel="stylesheet" href="style.css"/>
-  <script src="script.js" defer></script>
+  <style>
+    body {
+      background-color: #0b1f33;
+      margin: 0;
+      font-family: 'Georgia', serif;
+      color: #f5f5f5;
+      text-align: center;
+    }
+    header img {
+      max-width: 300px;
+      margin-top: 20px;
+    }
+    .menu-section img {
+      width: 100%;
+      max-width: 700px;
+      margin: 40px auto;
+      display: block;
+      border: 3px solid gold;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <img src="Italy_Logo_Oro.png" alt="Logo Bar Italy" class="logo"/>
-    <h1>Benvenuti al Bar Italy</h1>
-    <p class="slogan">Vivi un’esperienza tutta italiana</p>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menù</a></li>
-        <li><a href="contatti.html">Contatti</a></li>
-      </ul>
-    </nav>
+    <img src="Italy_Logo_Oro.png" alt="Bar Italy Logo"/>
   </header>
   <main>
-    <section class="decorazioni">
-      <p>🍸 Cocktail, 🍷 Vini, 🍔 Panini, 🍦 Gelati & altro!</p>
-    </section>
-  </main>
-  <footer>
-    <p>📍 Via Corrubbio 5, Torri del Benaco 37010</p>
-    <p>📞 <a href="tel:0457225259">0457225259</a> | 
-       <a href="https://wa.me/390457225259">WhatsApp</a> | 
-       <a href="https://www.instagram.com/Italyalbisano">Instagram</a> | 
-       <a href="https://www.facebook.com/Italyalbisano">Facebook</a></p>
-    <div id="language-selector">
-      🌐 Lingua: 
-      <select>
-        <option>Italiano</option>
-        <option>English</option>
-        <option>Deutsch</option>
-        <option>Français</option>
-        <option>Nederlands</option>
-      </select>
+    <div class="menu-section">
+      <img src="Menu_Preview.jpg" alt="Menù Categorie"/>
+      <img src="Menu_Cocktail.jpg" alt="Cocktail"/>
+      <img src="Menu_Aperitivi.jpg" alt="Aperitivi"/>
+      <img src="Menu_Vini.jpg" alt="Vini"/>
+      <img src="Menu_Birre.jpg" alt="Birre"/>
+      <img src="Menu_Caffetteria.jpg" alt="Caffetteria"/>
+      <img src="Menu_Bibite.jpg" alt="Bibite"/>
+      <img src="Menu_Amari.jpg" alt="Amari"/>
+      <img src="Menu_Panini.jpg" alt="Panini e Pietanze"/>
+      <img src="Menu_Frullati_Gelato.jpg" alt="Frullati e Gelato"/>
     </div>
-  </footer>
-  <div id="cookie-banner">
-    <p>Questo sito utilizza solo cookie tecnici necessari. <button onclick="acceptCookies()">OK</button></p>
-  </div>
+  </main>
 </body>
 </html>
