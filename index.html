@@ -1,47 +1,42 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Bar Italy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      background-color: #0b1f33;
+    html, body {
       margin: 0;
-      font-family: 'Georgia', serif;
-      color: #f5f5f5;
-      text-align: center;
+      padding: 0;
+      height: 100%;
+      background-color: #0b1f33;
     }
-    header img {
-      max-width: 300px;
-      margin-top: 20px;
+    body {
+      background: url('Home_Immagine_Completa.png') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
     }
-    .menu-section img {
-      width: 100%;
-      max-width: 700px;
-      margin: 40px auto;
-      display: block;
-      border: 3px solid gold;
+    .menu-button {
+      margin-bottom: 40px;
+      background-color: gold;
+      color: #0b1f33;
+      font-size: 1.5em;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      padding: 15px 30px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    .menu-button:hover {
+      background-color: #e6b800;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="Italy_Logo_Oro.png" alt="Bar Italy Logo"/>
-  </header>
-  <main>
-    <div class="menu-section">
-      <img src="Menu_Preview.jpg" alt="Menù Categorie"/>
-      <img src="Menu_Cocktail.jpg" alt="Cocktail"/>
-      <img src="Menu_Aperitivi.jpg" alt="Aperitivi"/>
-      <img src="Menu_Vini.jpg" alt="Vini"/>
-      <img src="Menu_Birre.jpg" alt="Birre"/>
-      <img src="Menu_Caffetteria.jpg" alt="Caffetteria"/>
-      <img src="Menu_Bibite.jpg" alt="Bibite"/>
-      <img src="Menu_Amari.jpg" alt="Amari"/>
-      <img src="Menu_Panini.jpg" alt="Panini e Pietanze"/>
-      <img src="Menu_Frullati_Gelato.jpg" alt="Frullati e Gelato"/>
-    </div>
-  </main>
+  <a href="menu.html" class="menu-button">Menù</a>
 </body>
 </html>
