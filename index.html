@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bar Italy</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      background-color: #0b1f33;
-    }
-    body {
-      background: url('Home_Immagine_Completa.png') no-repeat center center fixed;
-      background-size: cover;
-      position: relative;
-    }
-    .menu-button {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      background-color: gold;
-      color: #0b1f33;
-      font-size: 1em;
-      font-weight: bold;
-      border: none;
-      border-radius: 6px;
-      padding: 10px 18px;
-      text-decoration: none;
-      transition: background-color 0.3s;
-      z-index: 1000;
-    }
-    .menu-button:hover {
-      background-color: #e6b800;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <a href="menu.html" class="menu-button">Menù</a>
+  <header>
+    <img src="Italy_Logo_Oro.png" alt="Logo Bar Italy" class="logo"/>
+    <h1>Benvenuti al Bar Italy</h1>
+    <p class="slogan">Vivi un’esperienza tutta italiana</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menù</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="decorazioni">
+      <p>🍸 Cocktail, 🍷 Vini, 🍔 Panini, 🍦 Gelati & altro!</p>
+    </section>
+  </main>
+  <footer>
+    <p>📍 Via Corrubbio 5, Torri del Benaco 37010</p>
+    <p>📞 <a href="tel:0457225259">0457225259</a> | 
+       <a href="https://wa.me/390457225259">WhatsApp</a> | 
+       <a href="https://www.instagram.com/Italyalbisano">Instagram</a> | 
+       <a href="https://www.facebook.com/Italyalbisano">Facebook</a></p>
+    <div id="language-selector">
+      🌐 Lingua: 
+      <select>
+        <option>Italiano</option>
+        <option>English</option>
+        <option>Deutsch</option>
+        <option>Français</option>
+        <option>Nederlands</option>
+      </select>
+    </div>
+  </footer>
+  <div id="cookie-banner">
+    <p>Questo sito utilizza solo cookie tecnici necessari. <button onclick="acceptCookies()">OK</button></p>
+  </div>
 </body>
 </html>
